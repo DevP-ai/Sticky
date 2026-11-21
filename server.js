@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import stickyRoutes from "./routes/todo.routes.js";
+import stickyRoutes from "./routes/sticky.routes.js";
 import {connectDB} from "./config/db.js";
 import dotenv from "dotenv";
 
