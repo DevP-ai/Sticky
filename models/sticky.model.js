@@ -7,7 +7,7 @@ const stickySchema = new mongoose.Schema(
         required: [true, "Title is required"],
         trim: true
     },
-    discription: {
+    description: {
         type: String,
         default: ""
     },
