@@ -1,5 +1,5 @@
 import express from "express";
-import {creatSticky, getSticky} from "../controller/sticky.controller.js"
+import {creatSticky, getSticky, getStickyByID} from "../controller/sticky.controller.js"
 const route = express.Router();
 
 route.get("/health-check", (req,res) =>{
@@ -10,6 +10,8 @@ route.get("/health-check", (req,res) =>{
 //Create Sticky Note
 route.post("/create-sticky",creatSticky);
 
-route.get("/get-stickies",getSticky)
+route.get("/get-stickies",getSticky);
+
+route.get("/:id", getStickyByID);
 
 export default route;
