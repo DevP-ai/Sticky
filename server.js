@@ -24,7 +24,7 @@ connectDB();
 
 
 //Routes
-app.use("/api",stickyRoutes);
+app.use("/api/v1",stickyRoutes);
 
 //Start Server
 const PORT = process.env.PORT || 3002
